@@ -1,0 +1,174 @@
+ROWS SELECTED --->  set feedback on;
+
+_______ TEMA 1 _______
+
+EJERCICIO 1.5.
+
+SELECT empno, ename, 12*sal as ANNUALSALARY FROM emp;
+
+EJERCICIO 1.6.
+
+SELECT * FROM salgrade;
+
+EJERCICIO 1.7.
+
+SELECT * FROM DEPT;
+
+EJER 1.7.
+
+
+
+EJER 1.9.
+
+SELECT DISTINCT job FROM emp;
+
+EJER 1.10
+
+SELECT empno as "Emp   #", ename as "Employee", job as "Job", hiredate as "Hire Date"  FROM emp;
+
+EJER 1.11
+
+SELECT ename ||','|| job AS "Employee and Title" FROM emp;
+
+EJER 1.12.
+
+SELECT empno||','||ename||','||job||','||mgr||','||TO_DATE(hiredate)||','||sal||','||comm||','||deptno AS "THE_OUTPUT" FROM emp;
+
+_______ TEMA 2 _______
+
+EJER 2.1.
+
+SELECT ename, sal FROM emp WHERE sal > 2850;
+
+EJER 2.2.
+
+SELECT ename, deptno FROM emp WHERE empno = 7566;
+
+EJER 2.3.
+
+SELECT ename, sal FROM emp WHERE sal NOT BETWEEN 1500 AND 2850;
+
+EJER 2.4.
+
+SELECT ename, job, hiredate FROM emp WHERE hiredate BETWEEN to_date('20/02/1981','dd/mm/yyyy') AND to_date('01/05/1981','dd/mm/yyyy');
+
+EJER 2.5.
+
+SELECT ename, deptno FROM emp WHERE (deptno = 10 OR deptno = 30) ORDER BY ename;
+
+EJER 2.6.
+
+SELECT ename, sal FROM emp WHERE (sal>1500) AND (deptno = 10 OR deptno = 30);
+
+EJER 2.7.
+
+SELECT ename, hiredate FROM emp WHERE hiredate BETWEEN to_date('01/01/1982','dd/mm/yyyy') AND to_date('31/12/1982','dd/mm/yyyy');
+
+EJER 2.8.
+
+SELECT ename, job FROM emp WHERE mgr IS NULL;
+
+EJER 2.9.
+
+SELECT ename, sal, comm FROM emp WHERE comm IS NOT NULL;
+
+EJER 2.10
+
+SELECT ename FROM emp WHERE ename LIKE '__A%';
+
+EJER 2.11.
+
+SELECT ename FROM emp WHERE ename LIKE '%L%L%' AND (mgr = 7782 OR deptno = 30);
+
+EJER 2.12.
+
+SELECT ename, job, sal FROM emp WHERE job IN ('CLERK', 'ANALYST') AND sal NOT IN (1000,3000,5000);
+
+EJER 2.13.
+
+SELECT ename, sal, comm FROM emp WHERE comm > (sal+sal*0.1);
+
+_______ TEMA 3 _______
+
+EJER 3.1.
+
+SELECT sysdate as "Date" FROM dual;
+
+EJER 3.2.
+
+SELECT empno, ename, sal, ROUND(sal+sal*0.15,0) as "New Salary", (ROUND(sal+sal*0.15,0)-sal) as "Increase" FROM emp;
+
+EJER 3.4.
+
+SELECT empno, ename, sal, ROUND(sal+sal*0.15,0) as "New Salary" FROM emp;
+
+EJER 3.5. // SIN HACER
+
+SELECT ename, hiredate,
+
+EJER 3.6.
+
+SELECT ename, ROUND((sysdate-hiredate)/30) as MONTHS_WORKED FROM emp ORDER BY MONTHS_WORKED;
+
+EJER 3.7.
+
+SELECT ename||' earns $'||sal||' monthly but wants $'||(3*sal) as "Dreams Salaries" FROM emp WHERE sal IS NOT NULL;
+
+EJER 3.8.
+
+SELECT ename, LPAD(sal, 15, '$') as SALARY FROM emp WHERE sal IS NOT NULL;
+
+EJER 3.9.
+
+SELECT INITCAP(ename) as "Name", LENGTH(ename) as "Length" FROM emp WHERE (ename LIKE 'J%') OR (ename LIKE 'A%') OR (ename LIKE 'M%');
+
+EJER 3.10. //FALTA ORDENACION
+
+SELECT ename, hiredate, TO_CHAR(hiredate,'DAY') as DAY FROM emp;
+
+EJER 3.11.
+
+SELECT ename, NVL(TO_CHAR(comm), 'No Commision') as COMM FROM emp;
+
+_______ TEMA 4 _______
+
+EJER 4.1.
+
+SELECT empleados.ename, empleados.deptno, departamentos.dname FROM emp empleados, dept departamentos WHERE empleados.deptno = departamentos.deptno;
+
+EJER 4.2.
+
+SELECT DISTINCT empleados.job, departamentos.loc FROM emp empleados, dept departamentos WHERE empleados.deptno = 30 AND empleados.deptno = departamentos.deptno;
+
+EJER 4.3.
+
+SELECT empleados.ename, departamentos.dname, departamentos.loc FROM emp empleados, dept departamentos WHERE empleados.deptno = departamentos.deptno AND comm IS NOT NULL;
+
+EJER 4.4.
+
+SELECT empleados.ename, departamentos.dname FROM emp empleados, dept departamentos WHERE (empleados.ename LIKE '%A%' AND empleados.deptno = departamentos.deptno) ORDER BY dname;
+
+EJER 4.5.
+
+SELECT empleados.ename, empleados.job, empleados.deptno, departamentos.dname FROM emp empleados, dept departamentos WHERE empleados.deptno = departamentos.deptno AND departamentos.loc = 'DALLAS';
+
+EJER 4.6.
+
+SELECT emp1.ename as "Employee", emp1.empno as "Emp#", emp2.ename as "Manager", emp1.mgr as "Mgr#" FROM emp emp1, emp emp2 WHERE emp1.mgr = emp2.empno;
+
+EJER 4.7.
+
+SELECT emp1.ename as "Employee", emp1.empno as "Emp#", emp2.ename as "Manager", emp1.mgr as "Mgr#" FROM emp emp1 LEFT OUTER JOIN emp emp2 ON emp1.mgr = emp2.empno;
+
+EJER 4.8. // ¿<>?
+
+SELECT emp1.deptno as DEPARTMENT, emp1.ename as EMPLOYEE, emp2.ename as COLLEAGUE FROM emp emp1 JOIN emp emp2 ON emp1.deptno = emp2.deptno WHERE emp1.empno <> emp2.empno;
+
+EJER 4.9.
+
+DESCRIBE salgrade;
+SELECT empleados.ename, empleados.job, departamentos.dname, empleados.sal, grados.grade FROM emp empleados, dept departamentos, salgrade grados WHERE empleados.deptno = departamentos.deptno AND sal BETWEEN grados.losal AND grados.hisal ORDER BY departamentos.dname;
+
+EJER 4.10.
+
+SELECT empleados.ename, empleados.hiredate FROM emp empleados, emp blk WHERE blk.ename = 'BLAKE' AND empleados.hiredate > blk.hiredate;
