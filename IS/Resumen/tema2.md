@@ -72,7 +72,7 @@ Etapas:
 Cascada=>Modelo lineal;
 Cascada modificada=>Modelo cascada;
 
-##Ciclo de vida iterativo e incremental. (VER FOTO 2.2)
+## Ciclo de vida iterativo e incremental. (VER FOTO 2.2)
 Las bases del modelo iterativo son :
 + superar las limitaciones de ciclo en cascada
 + la rigidez y punto de vista teorico.
@@ -82,10 +82,10 @@ Las bases del modelo iterativo son :
 + Los metodos iterativos facilitan descubrir la solucion
 + Se necesitan metodos que permitan cambiar las ideas iniciales
 
-####Superacion de limitaciones de ciclo en cascada.
+#### Superacion de limitaciones de ciclo en cascada.
 Los metodos en cascada no producen un resultado tangible hasta el final y en proyectos largos esto supone una inversion sin recuperar.
 
-####Principios
+#### Principios
 + El desarrollo se organiza en torno a iteraciones cuyo resultado es un mini-proyecto que amplia el resultado de la iteracion anterior. cada iteracion cubre todas las actividades del desarrollo.==> REtroalimentacion
 + Al final debe haber un resultado utilizable.
 
@@ -111,7 +111,7 @@ Resultan apropiado por el desconocimiento inicial , por la necesidad de que este
 + Al final de cada iteracion se produce un incremento en el volume de funcionalidades.
 + Facilita la planificacion centrada en el cliente
 
-####Los métodos aguiles son iterativos
+#### Los métodos aguiles son iterativos
 
 La mayoria de los metodos agiles son iterativos e incrementales ya que los principios encagan con la filosofía del desarrollo iterativo ya que estos dan prioridad al software iterativo.
 
@@ -126,7 +126,7 @@ Recoge unos principios muy interesantes :
 + Incorporar la integridad . Desarrollar de forma que se pueda cambiar facilmente a lo largo del tiempo
 + Vision global. Evitar las optimizaciones parciales del proceso
 
-##Espiral(VER FOTO 2.6)
+#### Espiral(VER FOTO 2.6)
 
 + Modelo desarrollado por Boehm en 1988 presenta un desarrollo evolutivo.
 
@@ -141,3 +141,109 @@ Recoge unos principios muy interesantes :
 + Las actividades de ingenieria corresponde a las indicadas en los modelos lineales.
 
 + Las actividades de evaluacion analizan los resultados de la fase de ingenieria.
+
++ Permite multiples combinaciones ya que en la planificacion de cada ciclo se determina el avance que se va a ejecutar durante la vuelta
+
+## Proceso Unificado de Desarrollo
+
+El proceso unificado fue poropuesto por la empresa Rational Software con la intención de ser para los metodos de desarrollo de software con la intencion de ser para los metodos de desarrollo de software lo que el UML fue para los lenguajes de modelización.
+
+Uso extensivo de modelos y la adopcion de un ciclo de vida iterativo e incremental.
+
+Up es un conjunto de procesos configurable que se adapta a diferentes contextos.
+
+#### Prácticas UP
+
++ Desarrollo iterativo e incremental
++ Gestion de los requisitos
++ Arquitectura basadas en componentes
++ Utilizacion de modelos visuales
++ Verificación de la calidad del software.
++ Control de los cambios al software.
+
+Ademas se promueve una gestion proactiva de los riesgos y la contruccion de una arquitectura ejecutable.
+
+#### Fases del proyecto
+
++ Inicio: Se analiza el proyecto desde el punto de vista de la organizaciony se determina el ambit
+
++ Elaboración : Se analiza el dominio del sistema que hay que desarrollar hasta tener un conjunto de requisitos estable.
+
++ Construcción: Se desarrolla el resto de la funcionalidad
+
++ Transición: Se pone el producto a disposicion de la comunidad
+
+#### Hitos en el PU
+
++ Objetivos: Analizar el coste y los beneficios esperados del proyecto.
+
++ Arquitectura : Se alcanza cuando ya tenemos una versión mas o menos estable y final de la arquitectura.
+
++ Capacidad operacional inicial: Se completa cuando toda la funcionalidad queda lograda.
+
++ Entrega del producto: Ver si se han conseguido los objetivos iniciales del proyecto.
+
+#### Actividades
+
++ Modelización de negocio: Solucionar el problema de comunicación entre los expertos en el dominion y los especialistas en tecnología .
+
++ Requisitos: Describir que debe hacer el sistema.
+
++ Analisis y diseño : Describir cómo se implementará el sistema.Se crean modelos detallados de los componentes.
+
++ Implementación: Defonir la organizacion del codigo, escribirlo y verificar.
+
++ Pruebas: Verificar la iteraccion entre los objetos y componentes.
+
++ Despliege: Producir las entregas del sistema y entregarlas a los usuarios finales.
+
+#### Roles
+
++ Cliente: Cualquier persona que tenga un interés en el resultado final del proyecto
+
++ Jefe de proyecto: Encargado de la planificacion y coordinacion
+
++ Analista: Recoge la informacion de los stakeholders.
+
++ Arquitecto : Define la arquitectura del software.
+
++ Desarrollador: Desarrolla una parte del sistema.
+
++ Experto en pruebas: identifica , define , implementa y lleva a cabo las pruebas aportando un punto de vista complementario
+
+## Metodologias agiles: SCRUM
+
+Se trata de un metodo muy ligero que , siguiendo el principio lean de generar solo los artefactos que aportan un valor importante.
+
+#### Roles:
+SCRUM distingue de entrada en entre los que estan comprometidos en el desarrollo (Equipo) y los que estan involucrados(stakkeholders).
+
+#### Pollos y cerdos.
+
+Equipo:
+
++ Scrum Master: Resposable de asegurar que el equipo sigue los valores y las reglas del scrum.
+
++ Producto Owner: Responsable de velar por los intereses de todos los stakeholders.
+
++ Team:Er resto del equipo son los desarrolladores. No se especializan.
+
+Artefactos:
+
++ Product backlog: Es la lista de requisitos pendientes de implementar en el producto.
+
++ Sprint backlog: El backlog para una iteracion concreta. Los sprints tienen una duración de 6 semanas.
+
++ Release burndown chart: Grafico que muestra el progreso actual del equipo en funcion del numero de historias de usuario que faltan por implementar.
+
++ Sprint burndown: El burndown para una iteraccion concreta.
+
+#### Prácticas
+
++ sprint planning meeting : Reunion que se organiza antes de empezar un sprint.
+
++ Daily scrum: Reunion diaria en la que todos los miembros del equipo responden
+
++ Sprint review meeting: Al finalizar un sprint se revisa el trabajo realizado y se enseña a quien este interesado.
+
++ Sprint retrospective: sirve para reflexionar sobre lo que haya pasado durante el sprint.

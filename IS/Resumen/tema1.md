@@ -89,7 +89,7 @@ El resultado ha sido la necesidad de profesionalizar el desarrollo , mantenimien
 + Upper-Case=Ayudan a capturar requisitos , analisis y diseño.
 + Lower-case= Herramientas para la programacion , depuracion y pruebas.
 
-####Estandares y necesidades de la IS:
+#### Estandares y necesidades de la IS:
 
 Definirse a si misma .
 
@@ -99,22 +99,22 @@ De las mejores practicas , extraer modles de como ejecutar esos procesos para ev
 
 Definir estandares menores para dibujar criterios unificadores e requisitos.
 
-####Solucion de problemas
+#### Solucion de problemas
 
-#####Busqueda
+##### Busqueda
 + Formular el problema
 + Analizar el problema
 + Buscar soluciones
 + Decidir la solucion mas adecuada
 + Especificar la solucion
 
-#####Actividades
+##### Actividades
 + Obtencion de requiremientos
 + Analisis
 + Diseño del sistema+
 + Implementacion
 
-#####Evaluacion
+##### Evaluacion
 + Revision del analisis
 + Revision del diseño
 + Pruebas
@@ -145,7 +145,7 @@ No funcional:restriccion que debe tener el sistema.
 + Metodo: Tecnica repetible para resolver un problema concreto.
 + Metodologia:Coleccion de metodos para la resolucion de una clase de problemas
 
-##Ingenieria del Sistemas e Ingenieria del Software.
+## Ingenieria del Sistemas e Ingenieria del Software.
 
 La ingenieria de sistemas como fundamento de la ingeniera del software. Primera solucion a la crisis del software.
 
@@ -157,7 +157,7 @@ Un sistema es un conjunto de componentes organizados para cumplir una funcion o 
 
 + Ingenieria de sistema surgio en 1956 por H.Hitch para dessarrollar una disciplina de ingenieria que pudiera abarcar el desarrollo de grandes sistemas. Define el plan para gestionar las actividades tecnicas del proyecto.
 
-##Metodologías agiles
+## Metodologías agiles
 
 + Intentan resolver el como y no el que .
 + Se dice que hay que hacer pruebas y software modificable pero no dice como hacerlo.
@@ -165,7 +165,7 @@ Un sistema es un conjunto de componentes organizados para cumplir una funcion o 
 
 Surgieron en 2001 como alternativa a las metodologias formales que eran consideradas pensadas y rigidas.
 
-####Resumen del manifiesto agil:
+#### Resumen del manifiesto agil:
 + Humanos>robots.
 + Funcionalidad>Tochaco.
 + colaboracion con cliente > Negociacion contractual.
