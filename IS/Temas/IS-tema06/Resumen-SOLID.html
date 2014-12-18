@@ -1,0 +1,108 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+   <meta http-equiv="content-type" content="text/html;charset=UTF-8">
+   <style type="text/css">
+   /*CSS stylesheet is based on killwing's flavored markdown style:https://gist.github.com/2937864*/body{    margin: 0 auto;    font: 13px/1.231 Helvetica, Arial, sans-serif;    color: #444444;    line-height: 1;    max-width: 960px;    padding: 5px;}h1, h2, h3, h4 {    color: #111111;    font-weight: 400;}h1, h2, h3, h4, h5, p {    margin-bottom: 16px;    padding: 0;}h1 {    font-size: 28px;}h2 {    font-size: 22px;    margin: 20px 0 6px;}h3 {    font-size: 21px;}h4 {    font-size: 18px;}h5 {    font-size: 16px;}a {    color: #0099ff;    margin: 0;    padding: 0;    vertical-align: baseline;}a:link,a:visited{ text-decoration:none;}a:hover{ text-decoration:underline;}ul, ol {    padding: 0;    margin: 0;}li {    line-height: 24px;    margin-left: 44px;}li ul, li ul {    margin-left: 24px;}ul, ol {    font-size: 14px;    line-height: 20px;    max-width: 540px;}p {    font-size: 14px;    line-height: 20px;    max-width: 540px;    margin-top: 3px;}pre {    padding: 0px 4px;    max-width: 800px;    white-space: pre-wrap;    font-family: Consolas, Monaco, Andale Mono, monospace;    line-height: 1.5;    font-size: 13px;    border: 1px solid #ddd;    background-color: #f7f7f7;    border-radius: 3px;}code {    font-family: Consolas, Monaco, Andale Mono, monospace;    line-height: 1.5;    font-size: 13px;    border: 1px solid #ddd;    background-color: #f7f7f7;    border-radius: 3px;}pre code {    border: 0px;}aside {    display: block;    float: right;    width: 390px;}blockquote {    border-left:.5em solid #40AA53;    padding: 0 2em;    margin-left:0;    max-width: 476px;}blockquote  cite {    font-size:14px;    line-height:20px;    color:#bfbfbf;}blockquote cite:before {    content: '\2014 \00A0';}blockquote p {      color: #666;    max-width: 460px;}hr {    height: 1px;    border: none;    border-top: 1px dashed #0066CC}button,input,select,textarea {  font-size: 100%;  margin: 0;  vertical-align: baseline;  *vertical-align: middle;}button, input {  line-height: normal;  *overflow: visible;}button::-moz-focus-inner, input::-moz-focus-inner {  border: 0;  padding: 0;}button,input[type="button"],input[type="reset"],input[type="submit"] {  cursor: pointer;  -webkit-appearance: button;}input[type=checkbox], input[type=radio] {  cursor: pointer;}/* override default chrome & firefox settings */input:not([type="image"]), textarea {  -webkit-box-sizing: content-box;  -moz-box-sizing: content-box;  box-sizing: content-box;}input[type="search"] {  -webkit-appearance: textfield;  -webkit-box-sizing: content-box;  -moz-box-sizing: content-box;  box-sizing: content-box;}input[type="search"]::-webkit-search-decoration {  -webkit-appearance: none;}label,input,select,textarea {  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;  font-size: 13px;  font-weight: normal;  line-height: normal;  margin-bottom: 18px;}input[type=checkbox], input[type=radio] {  cursor: pointer;  margin-bottom: 0;}input[type=text],input[type=password],textarea,select {  display: inline-block;  width: 210px;  padding: 4px;  font-size: 13px;  font-weight: normal;  line-height: 18px;  height: 18px;  color: #808080;  border: 1px solid #ccc;  -webkit-border-radius: 3px;  -moz-border-radius: 3px;  border-radius: 3px;}select, input[type=file] {  height: 27px;  line-height: 27px;}textarea {  height: auto;}/* grey out placeholders */:-moz-placeholder {  color: #bfbfbf;}::-webkit-input-placeholder {  color: #bfbfbf;}input[type=text],input[type=password],select,textarea {  -webkit-transition: border linear 0.2s, box-shadow linear 0.2s;  -moz-transition: border linear 0.2s, box-shadow linear 0.2s;  transition: border linear 0.2s, box-shadow linear 0.2s;  -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);  -moz-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);}input[type=text]:focus, input[type=password]:focus, textarea:focus {  outline: none;  border-color: rgba(82, 168, 236, 0.8);  -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1), 0 0 8px rgba(82, 168, 236, 0.6);  -moz-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1), 0 0 8px rgba(82, 168, 236, 0.6);  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1), 0 0 8px rgba(82, 168, 236, 0.6);}/* buttons */button {  display: inline-block;  padding: 4px 14px;  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;  font-size: 13px;  line-height: 18px;  -webkit-border-radius: 4px;  -moz-border-radius: 4px;  border-radius: 4px;  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);  -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);  background-color: #0064cd;  background-repeat: repeat-x;  background-image: -khtml-gradient(linear, left top, left bottom, from(#049cdb), to(#0064cd));  background-image: -moz-linear-gradient(top, #049cdb, #0064cd);  background-image: -ms-linear-gradient(top, #049cdb, #0064cd);  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #049cdb), color-stop(100%, #0064cd));  background-image: -webkit-linear-gradient(top, #049cdb, #0064cd);  background-image: -o-linear-gradient(top, #049cdb, #0064cd);  background-image: linear-gradient(top, #049cdb, #0064cd);  color: #fff;  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);  border: 1px solid #004b9a;  border-bottom-color: #003f81;  -webkit-transition: 0.1s linear all;  -moz-transition: 0.1s linear all;  transition: 0.1s linear all;  border-color: #0064cd #0064cd #003f81;  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);}button:hover {  color: #fff;  background-position: 0 -15px;  text-decoration: none;}button:active {  -webkit-box-shadow: inset 0 3px 7px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);  -moz-box-shadow: inset 0 3px 7px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);  box-shadow: inset 0 3px 7px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);}button::-moz-focus-inner {  padding: 0;  border: 0;}/* table  */table {    border-spacing: 0;    border: 1px solid #ccc;}td, th{    border: 1px solid #ccc;    padding: 5px;}/* code syntax highlight.Documentation: http://www.mdcharm.com/documentation/code_syntax_highlighting.html#custom_your_own */pre .literal,pre .comment,pre .template_comment,pre .diff .header,pre .javadoc {    color: #008000;}pre .keyword,pre .css .rule .keyword,pre .winutils,pre .javascript .title,pre .nginx .title,pre .subst,pre .request,pre .status {    color: #0000FF;    font-weight: bold}pre .number,pre .hexcolor,pre .python .decorator,pre .ruby .constant {    color: #0000FF;}pre .string,pre .tag .value,pre .phpdoc,pre .tex .formula {    color: #D14}pre .title,pre .id {    color: #900;    font-weight: bold}pre .javascript .title,pre .lisp .title,pre .clojure .title,pre .subst {    font-weight: normal}pre .class .title,pre .haskell .type,pre .vhdl .literal,pre .tex .command {    color: #458;    font-weight: bold}pre .tag,pre .tag .title,pre .rules .property,pre .django .tag .keyword {    color: #000080;    font-weight: normal}pre .attribute,pre .variable,pre .lisp .body {    color: #008080}pre .regexp {    color: #009926}pre .class {    color: #458;    font-weight: bold}pre .symbol,pre .ruby .symbol .string,pre .lisp .keyword,pre .tex .special,pre .prompt {    color: #990073}pre .built_in,pre .lisp .title,pre .clojure .built_in {    color: #0086b3}pre .preprocessor,pre .pi,pre .doctype,pre .shebang,pre .cdata {    color: #999;    font-weight: bold}pre .deletion {    background: #fdd}pre .addition {    background: #dfd}pre .diff .change {    background: #0086b3}pre .chunk {    color: #aaa}pre .markdown .header {    color: #800;    font-weight: bold;}pre .markdown .blockquote {    color: #888;}pre .markdown .link_label {    color: #88F;}pre .markdown .strong {    font-weight: bold;}pre .markdown .emphasis {    font-style: italic;}
+   </style>
+   
+   
+</head>
+<body>
+    <h1 id="toc_0">Cinco maneras de mejorar tu código: SOLID</h1>
+
+<p>Resumen de la charla/clase <em>Cinco maneras de mejorar tu código: SOLID</em> impartida por Sergio Gómez (@sgomez) en la asignatura de Ingeniería del Software de segundo curso del Grado en Ing. Informática.</p>
+
+<p>Existen varios principios de diseño software para hacer código reutilizable y extensible:</p>
+
+<ul>
+<li><em>Don’t Repeat Yourself</em> (<strong>DRY</strong>), no te repitas</li>
+<li><em>You ain’t gonna need it</em> (<strong>YAGNI</strong>), no lo hagas hasta que no lo necesites</li>
+<li><em>Keep it simple, stupid</em> (<strong>KISS</strong>), mantenlo simple, estúpido</li>
+<li><strong>SOLID</strong>:
+
+<ul>
+<li><strong>S</strong>ingle responsibility principle, responsabilidad única</li>
+<li><strong>O</strong>pen/closed principle</li>
+<li><strong>L</strong>iskov substitution principle</li>
+<li><strong>I</strong>nterface segregation principle</li>
+<li><strong>D</strong>ependency inversion principle</li>
+</ul></li>
+</ul>
+
+<h1 id="toc_1">Principio de Única Responsabilidad</h1>
+
+<p>Principio de Única Responsabilidad (<em>Single responsibility principle</em>) la noción de que un objeto solo debería tener una única responsabilidad.</p>
+
+<p>En el ejemplo tenemos una clase <em>Book</em> cuya responsabilidad es representar un libro. Ubicar en esta clase métodos para obtener un localizador de un libro o almacenarlo en la base de datos sería erróneo. Lo adecuado sería crear dos clases que se encargasen de esto.</p>
+
+<p>Ejemplos:</p>
+
+<ul>
+<li><a href="src/srp-book-01.php">srp-book-01.php</a></li>
+<li><a href="src/srp-book-02.php">srp-book-02.php</a></li>
+<li><a href="src/srp-book-03.php">srp-book-03.php</a></li>
+</ul>
+
+<h1 id="toc_2">Principio Abierto/Cerrado</h1>
+
+<p>Las &quot;entidades de software deben estar abiertas para su extensión, pero cerradas para su modificación&quot;. Esto significa que el código debe estar abierto a incorporar nueva funcionalidad o mejoras, pero que estas mejoras no deberían alterar el código existen (salvo corrección de errores, obviamente).</p>
+
+<p>En el ejemplo la extensión de funcionalidad se realiza incrementando el número de casos en una estructura de control <em>swicth</em>. Una solución más adecuada sería utilizar una clase abstracta y que la extensión de funcionalidad se haga con nuevas clases que implementen la clase abstracta, de esta forma la extensión se realiza sin modificar el código anterior.</p>
+
+<p>Ejemplos:</p>
+
+<ul>
+<li><a href="src/ocp-rules-01.php">ocp-rules-01.php</a></li>
+<li><a href="src/ocp-rules-02.php">ocp-rules-02.php</a></li>
+</ul>
+
+<h1 id="toc_3">Principio de sustitución de Liskov</h1>
+
+<p>Los objetos de un programa deberían ser reemplazables por instancias de sus subtipos sin alterar el correcto funcionamiento del programa. Esto se traduce en que las clases hijas no deben modificar el comportamiento de las clases madre.</p>
+
+<p>En el ejemplo tenemos la clase <em>Rectangulo</em>, de la cuál hereda <em>Cuadrado</em> modificando los métodos <em>set</em> para que el ancho y alto sean iguales. El problema surge con la función que calcula el área, ya que que el comportamiento esperado de esta función es distinto para las dos clases. La clase hija debería poder utilizarse como la clase madre de manera idéntica sin tener que conocer la diferencia entre las clases. En el ejemplo el test de unidad fallará cuando no debería hacerlo.</p>
+
+<p>Ejemplos:</p>
+
+<ul>
+<li><a href="src/lsp-rectangulo-01.php">lsp-rectangulo-01.php</a></li>
+</ul>
+
+<h1 id="toc_4">Principio de segregación de la interfaz</h1>
+
+<p>Al plantear qué métodos debe definir una interfaz (en el sentido de clase abstracta o similares) no se debería establecer un conjunto único, sino que los métodos deberían agruparse por funcionalidad resultando en distintas interfaces. </p>
+
+<p>Por ejemplo, una interfaz para manejar una impresora no debería asumir que todas las impresoras tendrán un escáner o un fax integrado, de otra forma la interfaz obligaría a definir los métodos relacionados con escanear documentos a todas las clases que implementen la interfaz, aunque la impresora para la que se desarrolla el controlador no disponga de interfaz. Como alternativa las funcionalidades relacionadas con imprimir, escanear o enviar faxes deberían agruparse por separado. </p>
+
+<p>Ejemplos: </p>
+
+<ul>
+<li><a href="src/isp-xerox-01.php">isp-xerox-01.php</a></li>
+<li><a href="src/isp-xerox-02.php">isp-xerox-02.php</a></li>
+</ul>
+
+<h1 id="toc_5">Principio de inversión de dependencia</h1>
+
+<p>Este principio se refiere a una forma de desacoplar módulos software en el sentido de que la tradicional dependencia de los módulos de alto nivel respecto a los inferiores debe <em>invertirse</em> para romper esta dependencia de los detalles de implementación de bajo nivel. El principio dice: </p>
+
+<ol>
+<li>Un módulo de alto nivel no debe depender de módulos de bajo nivel. Ambos deben depender de abstracciones. </li>
+<li>Las abstracciones no deben depender de los detalles, sino que los detalles deben depender de las abstracciones. </li>
+</ol>
+
+<p><img src="Dependency_inversion.png" alt="Dependency_inversion.png" title="Ilustración del rediseño para la inversión de dependencia"></p>
+
+<p>La figura muestra un código con la misma funcionalidad, sin embargo, en la figura de la derecha se ha utilizado una interfaz para invertir la dependencia. El patrón de diseño <em>injección de dependencia</em> ayuda a cumplir este principio.</p>
+
+<p>Ejemplos: </p>
+
+<ul>
+<li><a href="src/dip-usuario-01.php">dip-usuario-01.php</a></li>
+<li><a href="src/dip-usuario-02.php">dip-usuario-02.php</a></li>
+<li><a href="src/dip-usuario-03.php">dip-usuario-03.php</a></li>
+<li><a href="src/dip-usuario-04.php">dip-usuario-04.php</a></li>
+</ul>
+
+</body>
+</html>
