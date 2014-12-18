@@ -1,0 +1,81 @@
+Dekker:
+turnoProceso=PRIMERO;
+P1QuiereEntrar=p2QuiereEntrar=false;
+
+
+while(true)
+{
+	P1QuiereEntrar=true;
+	while(p2QuiereEntrar)
+	{
+		if(turnoProceso==SEGUNDO)
+		{
+			p1QuiereEntrar=false;
+			while(turnoProceso==SEGUNDO)
+			p1QuiereEntrar=true;
+		}
+	}
+	/*sección crítica*/
+	trunoProceso==SEGUNDO;
+	P1QuiereEntrar=false;
+	/*sección residual*/
+}
+
+///////////////////////////////////////////////////////
+
+
+Peterson:
+
+turnoProceso=PRIMERO;
+p1quiereEntrar=p2QuiereEntrar=true;
+
+while(true)
+{
+	p1quiereEntrar=true;
+	turnoProceso=SEGUNDO;
+	while(p2quiereEntrar && turnoProceso==segundo); //espera activa
+	/*Sección crítica*/
+	p1quiereEntrar=false;
+	/*sección residual*/
+}
+
+/////////////////////////////////////////////////////
+
+lamport:
+
+eligiendo[N]={false}
+tickets[N]={0}
+
+while(true)
+{
+	eligiendo[I]=true;
+	tickets[I]= max(tickets[0], tickets[1], ... , tickets[N]) + 1;
+	eligiendo[I]=false;
+	
+	for(j=0;j<N;j++)
+	{
+		while(eligiendo[j]);//Espera activa
+		while(tickets[j]!=0  &&
+			(tickets[j], j) m (tickets[I], I) ); // (a,b) m (c,d) -->    a<c || ( a==c && b<d )     // Espera activa
+	}
+	
+	/*sección crítica*/
+	tickets[I]=0;
+	/*sección residual*/
+}
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+}
+	
