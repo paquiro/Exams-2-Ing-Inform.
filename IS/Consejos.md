@@ -19,7 +19,7 @@ Para el tema dos os aconsejo que hagais una miradilla al tema IS-tema02.pdf que 
 
 Mirarse simplemente el resumen que hay en tema4.md. Mirarse ejemplos de casos de uso y de historias de usuario que tambien son importantes saber como hacerlos. Mirar tambien los ejemplos de casos de uso por niveles.
 
-*APRENDERSE DE MEMORIA LOS 13 DIAGRAMAS DE UML*
+**APRENDERSE DE MEMORIA LOS 13 DIAGRAMAS DE UML**
 
 ## Tema 5
 
