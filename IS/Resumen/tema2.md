@@ -20,11 +20,11 @@ El método de desarrollo definirá un ciclo de vida (qué etapas forman
 +   Project Management Institute (PMI) es el modelo más popular: Pequeñas tareas repetitivas. Ej: La cadena de produccion industrial
 + Método de producción Toyota: lean-manufacturing 1 , dos grandes principios: Evitar producir productos defectuosos, y producir solamente lo necesario(just in time). La aplicacion se conoce como lean software development.
 
-##Clasificacion metodos:
-####Clasificacion metodos de desarrolo:
+## Clasificacion metodos:
+#### Clasificacion metodos de desarrolo:
 Las actividades son las mismas en los metodos y las diferencias radicna en el cuando y el como
 
-####Seleccion del metodo:
+#### Seleccion del metodo:
 Elegir el metodo depende de:
 + Riesgo
 + valor de negocio
@@ -40,12 +40,12 @@ Dependiendo de la claridad podemos dividirlo en distintos grupos:
 + Grupo 3: Tenemos la solucion pero no tenemos los problemas. Ej: Queremeos evaluar un producto para ver si cubre necesidades.
 + Grupo 4: Flexibilidad respecto a la solucion y respecto al problema.
 
-##Ciclo de vida en cascada:
-####Ciclo de vida en cascada o clasico:
+## Ciclo de vida en cascada:
+#### Ciclo de vida en cascada o clasico:
 + Organizacion similar a una cadena de produccion con trabajadores.
 + Los trabajadores producen artefactos que son producidos por otros trabajadores.
 
-######Ventajas
+###### Ventajas
 Sencillo de aplicar y apropiado a nuevas versiones de sistema o sistemas pequeños
 ######Inconvenientes:
 Dificil aplicacion por su rigidez:
@@ -54,7 +54,7 @@ Dificil aplicacion por su rigidez:
 + Los errores se propagan a etapas siguientes
 + Estimaciones teoricas
 
-####Lineal o secuencial.
+#### Lineal o secuencial.
 Etapas:
 + Requisitos: ¿Qué debe ser el producto?
 + Analisis y diseño: ¿Cómo debe ser el producto?
@@ -89,22 +89,22 @@ Los metodos en cascada no producen un resultado tangible hasta el final y en pro
 + El desarrollo se organiza en torno a iteraciones cuyo resultado es un mini-proyecto que amplia el resultado de la iteracion anterior. cada iteracion cubre todas las actividades del desarrollo.==> REtroalimentacion
 + Al final debe haber un resultado utilizable.
 
-####Esquema Iterativo:( VER FOTO 2.3)
-######Modelo incremental.(VER FOTO 2.4)
+#### Esquema Iterativo:( VER FOTO 2.3)
+###### Modelo incremental.(VER FOTO 2.4)
 + El usuairo dispone de pequños subsistemas operativos.
 + Entregas parciales en periodos cortos , incorporacion de nuevos requisitos.
 
 Resulta apropiado ya que el cliente dispondra de parte de la funcionalidad antes de lo que costaria.
 Desarrollo de sistemas en los que interesa obtener requisitos de forma escalonada.
 
-######Modelo evolutivo.
+###### Modelo evolutivo.
 + Compuesto por varios ciclos de desarrollo. Cada uno de ellos produce un sistema completo.
 + Información acumulado para la mejora de etapas.
 + Ciclo comun a sistemas qe se mejoran
 
 Resultan apropiado por el desconocimiento inicial , por la necesidad de que este en operacion en tiempos inferiores a los que serian necesarios y necesidad de desarrollar sistemas en entornos cambiantes.
 
-######Aclaracion sobre iteraciones.(VER FOTO 2.5)
+###### Aclaracion sobre iteraciones.(VER FOTO 2.5)
 + Una iteración dura entre 1-6 semanas.
 + En la iteración se trabajan todas las fases.
 + Según avanza el proyecto el énfasis en las fases irá variando.

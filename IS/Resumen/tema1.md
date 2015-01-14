@@ -1,20 +1,20 @@
 TEMA 1
 ------
-##¿Qué es la ingeniería del software?
+## ¿Qué es la ingeniería del software?
 
-####Software
+#### Software
 
 El Software es todo aquello intangible que hay en un ordendador , incluyendo el conjunto de programas informáticos que indican las secuencia de instrucciones que un ordenador debe seguir
 
-####Hardware
+#### Hardware
 
 El hardware es todo el conjunto de componentes físicos de un ordenador.
 
-####Desarrollo Software
+#### Desarrollo Software
 
 Cuando decimos desarrollo software nos referimos al conjunto de actividades que nos llevan desde la idea hasta el resultado final del software.
 
-+ Programacin.
++ Programación.
 + Compilacíón.
 + Documentación.
 + Mantenimiento.
@@ -36,51 +36,51 @@ Forma parte de algun dispositivo: Ej: Sistema de frenado , lavadoras.
 
 Estas tecnicas estan enfocadas al desarrollo de software de aplicacion.
 
-####Sistema de informacion
+#### Sistema de informacion
 Un sistema de informacion es un conjunto de elementos orientados al tratamiento y administracion de datos e informacion , organizados y listos para su uso posterior para cubrir una necesidad.
 Estos sistemas usan gestores de bases de datos y soportan una serie de actividades humanas dentro del contexto de un sistema.
 
-##Naturaleza y problemas del desarrollo software.
+## Naturaleza y problemas del desarrollo software.
 
-####Causas de la crisis del software:
+#### Causas de la crisis del software:
 + Naturaleza logica del software.
 + Mala gestion de los proyectos.
 + Ausencia de entrenamiento en nuevas tecnicas.
 + Resistencia al cambio.
 
-####Mitos del software:
-####Mitos de los gestores:
+#### Mitos del software:
+#### Mitos de los gestores:
 + Uso de estandares de otras ingenierias.
 Mala planificacion: Un aumento de programadores acelera el proyecto.
 
-####Mitos de los desarrolladores:
+#### Mitos de los desarrolladores:
 + Programa funcionando = fin del trabajo.
 + Calidad = el programa se ejecuta sin errores.
 + Entrega al cliente = programa funcionando.
 
-####Mitos del cliente:
+#### Mitos del cliente:
 + Requisitos establecidos como una declaración general de objetivos.
 + Flexibilidad del software ante los cambios.
 
-##Ingenieria del software:
+## Ingenieria del software:
 
-####Definición inicial:
+#### Definición inicial:
 Establecimiento y uso de princpios de ingenieria para obtener software economico qe trabaje de forma eficiente en maquinas reales.
 
-####Definicion IEEE
+#### Definicion IEEE
 Aplicacion de un enfoque sistematico , disciplinado y cuantificable al desarrollo , operacion y mantenimiento de software.
 
-####Otra definición:
+#### Otra definición:
 
 Disciplina que comprende todos los aspectos de la producción de software.
 Es una actividad de modelado , solucion de problemas, adquisicion de conocimiento y dirigida por una fundamentacion.
 
-####La ingenieria del software:
+#### La ingenieria del software:
 
 desde 1968 hasta la fecha han sido muchos los esfuerzos para identificar las causas del problema y definir pautas estar para la produccion y mantenimeitno del software.
 El resultado ha sido la necesidad de profesionalizar el desarrollo , mantenimiento y operacion de los sistemas de software.
 
-####Objetivos de IS
+#### Objetivos de IS
 
 + Panificar antes de desarrollo.
 + Diseñar antes de programar.
@@ -122,7 +122,7 @@ Definir estandares menores para dibujar criterios unificadores e requisitos.
 
 #### DEfiniciones en IS:
 
-#####Roles
+##### Roles
  Conjunto de responsabilidades en el proyecto o en el sistema, asignado a un participante. Multipluralidad
 + Cliente: Encarga y paga el sistema
 + Desarrolladores: construyen el sistema
