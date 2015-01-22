@@ -111,7 +111,7 @@ Definir estandares menores para dibujar criterios unificadores e requisitos.
 ##### Actividades
 + Obtencion de requiremientos
 + Analisis
-+ Diseño del sistema+
++ Diseño del sistema
 + Implementacion
 
 ##### Evaluacion
