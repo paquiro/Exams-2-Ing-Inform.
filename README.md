@@ -1,4 +1,4 @@
-Exams-2-Ing-Inform.
+2º Ing.Informática (2º Cuatrimestre).
 ===================
 
-Para estudiar para los exámenes.
+Todos los temarios y esas cosas para tenerlo.
