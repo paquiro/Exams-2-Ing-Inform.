@@ -1,0 +1,9 @@
+Es obligatorio comprobar que los scripts funcionan correctamente en las máquina ts.uco.es de la UCO.
+Para ello, desde cualquier ordenador con un cliente SSH, podemos realizar una conexión remota utilizando el protocolo SSH:
+1) Para abrir una sesión por terminal, podemos utilizar el siguiente comando:
+ssh usuarioUCO@ts.uco.es
+donde usuarioUCO es vuestro usuario dentro de la UCO.
+2) El comando anterior nos abriría una sesión de terminal, pero aún así nos gustaría tener acceso a nuestra carpeta remota personal. Para intercambiar ficheros entre nuestra carpeta y la carpeta remota, casi todos los navegadores de archivos ofrecen la posibilidad de montar una carpeta remota por sftp (protocolo FTP sobre sesión SSH). Para ello, debemos especificar una conexión remota. Si pulsamos Ctrl+L, se nos permite especificar cualquier dirección, de forma que si esta dirección empieza por "sftp" se entenderá que es una conexión SFTP. Introduciendo la siguiente dirección, montaríamos la carpeta remota:
+sftp://usuarioUCO@ts.uco.es/home/usuarioUCO
+donde usuarioUCO es vuestro usuario dentro de la UCO.
+En muchas distribuciones, la carpeta remota puede guardarse en "Favoritos" para acceder a ella de forma más cómoda. Esta opción suele estar en el menú "Lugares", utilizando la opción "Conectar con el servidor. 
